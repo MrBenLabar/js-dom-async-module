@@ -26,5 +26,10 @@ A simple interactive to-do list built with HTML, CSS, and JavaScript.
 2. Open the todo-interactive folder.
 3. Open index.html in your web browser.
 
+
+## Project Status
+
+Interactive To Do List completed and submitted for mentor review.
+
 ### Author
 Lubem Labar
