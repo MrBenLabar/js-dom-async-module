@@ -1,30 +1,86 @@
+# JavaScript DOM and Async Module
 
-# JS DOM Async Module
+## Project Overview
 
-This repository contains practical exercises and projects completed during the JavaScript DOM and Async module.
+This repository contains practical JavaScript exercises completed as part of the JavaScript DOM and Asynchronous Programming module.
 
-## Task: Interactive To Do List
+The exercises demonstrate JavaScript functions, DOM manipulation, event handling, callbacks, asynchronous operations, and error handling.
 
-### Description
-A simple interactive to-do list built with HTML, CSS, and JavaScript.
+## Project Structure
 
-### Features
+```text
+js-dom-async-module/
+│
+├── README.md
+│
+└── tasks/
+    ├── todo-interactive/
+    │   ├── index.html
+    │   ├── style.css
+    │   └── script.js
+    │
+    └── callback-assignment/
+        └── fetchDataCallback.js
+```
+
+## Completed Assignments
+
+### 1. Interactive To-Do List
+
+**Folder:** `tasks/todo-interactive/`
+
+This exercise demonstrates DOM manipulation and event handling.
+
+Features:
 - Displays a list of tasks.
-- Tasks appear gray by default.
-- Clicking a task marks it as completed.
-- Completed tasks turn green.
-- A check icon appears when a task is completed.
-- Clicking a completed task again returns it to its incomplete state.
+- Allows users to click tasks to mark them as completed.
+- Toggles the completed state when a task is clicked.
+- Uses CSS to distinguish completed tasks visually.
 
-### Technologies Used
-- HTML5
-- CSS3
-- JavaScript
+**Technologies:** HTML, CSS, and JavaScript.
 
-### How to Run
-1. Clone or download the repository.
-2. Open the todo-interactive folder.
-3. Open index.html in your web browser.
+### 2. Callback Function Assignment
 
-### Author
-Lubem Labar
+**File:** `tasks/callback-assignment/fetchDataCallback.js`
+
+This exercise demonstrates callback functions and asynchronous JavaScript.
+
+Features:
+- Implements `fetchDataWithCallback(callback)`.
+- Uses `setTimeout()` to simulate a two-second data retrieval process.
+- Passes the message `"Data fetched"` to a callback function.
+- Uses `try...catch` to handle simulated errors.
+- Tests both successful execution and error handling.
+
+**Technologies:** JavaScript, callbacks, `setTimeout()`, and `try...catch`.
+
+## How to Run the Exercises
+
+### Interactive To-Do List
+
+Open `tasks/todo-interactive/index.html` in a web browser.
+
+### Callback Function Assignment
+
+Ensure Node.js is installed. From the project root, run:
+
+```bash
+node tasks/callback-assignment/fetchDataCallback.js
+```
+
+Expected successful output:
+
+```text
+Data fetched
+```
+
+## Learning Objectives
+
+Through these exercises, the module develops practical understanding of:
+
+- JavaScript functions and callbacks.
+- DOM selection and manipulation.
+- Event listeners and user interactions.
+- Asynchronous operations using `setTimeout()`.
+- Error handling using `try...catch`.
+- Project organisation and version control using Git and GitHub.
