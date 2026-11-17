@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Profile</title>
+</head>
+<body>
+
+    <h1>My Personal Profile</h1>
+
+    <!-- This element will display the personal information -->
+    <div id="profile"></div>
+
+    <script>
+        // Function to calculate approximate age from year of birth
+        function calculateAge(yearOfBirth) {
+            const currentYear = new Date().getFullYear();
+            return currentYear - yearOfBirth;
+        }
+
+        // Store the year of birth
+        const birthYear = 1986; // Replace with your actual birth year
+
+        // Create an object containing personal information
+        const person = {
+            name: "Lubem Labar",
+            dateOfBirth: "08/01/1986",
+            nationality: "Nigerian",
+            currentLocation: "Abuja",
+            age: calculateAge(birthYear),
+            hobbies: ["Reading", "Learning", "Travelling"]
+        };
+
+        // Display the object information inside the HTML element
+        document.getElementById("profile").innerHTML = `
+            <p><strong>Name:</strong> ${person.name}</p>
+            <p><strong>Date of Birth:</strong> ${person.dateOfBirth}</p>
+            <p><strong>Nationality:</strong> ${person.nationality}</p>
+            <p><strong>Current Location:</strong> ${person.currentLocation}</p>
+            <p><strong>Age:</strong> ${person.age} years</p>
+            <p><strong>Hobbies:</strong> ${person.hobbies.join(", ")}</p>
+        `;
+
+        // Display the complete object in the browser console
+        console.log(person);
+    </script>
+
+</body>
+</html>
