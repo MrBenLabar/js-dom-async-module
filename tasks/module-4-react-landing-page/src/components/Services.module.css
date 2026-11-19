@@ -1,0 +1,71 @@
+
+.services {
+  padding: 80px 7%;
+  background-color: #f5f8fc;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.heading p {
+  color: #1685d1;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.heading h2 {
+  color: #16325c;
+  font-size: 34px;
+  margin-bottom: 12px;
+}
+
+.heading span {
+  color: #666666;
+  font-size: 16px;
+}
+
+.serviceCards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 35px 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+  border-bottom: 4px solid #1685d1;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  color: #16325c;
+  font-size: 21px;
+  margin-bottom: 15px;
+}
+
+.card p {
+  color: #666666;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .serviceCards {
+    grid-template-columns: 1fr;
+  }
+
+  .heading h2 {
+    font-size: 28px;
+  }
+}

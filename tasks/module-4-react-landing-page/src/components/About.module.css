@@ -1,0 +1,43 @@
+
+.about {
+  padding: 90px 7%;
+  background-color: #ffffff;
+}
+
+.aboutContent {
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.label {
+  color: #1685d1;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.aboutContent h2 {
+  color: #16325c;
+  font-size: 36px;
+  line-height: 1.3;
+  margin-bottom: 25px;
+}
+
+.aboutContent p {
+  color: #666666;
+  font-size: 16px;
+  line-height: 1.9;
+  margin-bottom: 18px;
+}
+
+@media (max-width: 600px) {
+  .aboutContent h2 {
+    font-size: 28px;
+  }
+
+  .aboutContent p {
+    font-size: 15px;
+  }
+}
